@@ -1,0 +1,32 @@
+@import "compass";
+@import "compass/reset";
+@import "sassy-buttons";
+
+$color1: #ff7547;
+$background: #f3f3f3;
+
+@font-face {
+  font-family: Consolas, monaco, monospace;;
+}
+
+@mixin fontNormal($fontSize: small) {
+  font-family: Consolas, monaco, monospace;
+  font-size: 13px;
+}
+
+body {
+  color: $color1;
+  background-color: $background;
+  @include fontNormal(small);
+  -webkit-text-size-adjust: none;
+
+  a {
+    color: $color1;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $color1;
+    text-decoration: underline
+  }
+}

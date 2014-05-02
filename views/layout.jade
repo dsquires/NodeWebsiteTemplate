@@ -1,0 +1,16 @@
+!!! 5
+html.no-js(lang='en')
+
+    head
+        title Template Website!
+        block style
+            link(href='/stylesheets/index.css', rel='stylesheet')
+    body
+
+        #header
+            | header
+        #divContent
+            block content
+
+    script(src='http://code.jquery.com/jquery-2.1.0.min.js')
+    block scripts

@@ -1,0 +1,14 @@
+{
+    "name": "turnkeyvr_Homeowner_App",
+    "description": "turnkeyvr homeowner app",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+    },
+    "dependencies": {
+        "express": "*",
+        "jade": "0.34.1"
+    },
+    "devDependencies": {
+    }
+}
