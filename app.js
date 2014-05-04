@@ -10,18 +10,12 @@ process.on('uncaughtException', function(err) {
 
 var app = express();
 
-app.configure(function() {
-    // app.use(express.favicon(__dirname + '/public/favicon.ico', {maxAge: 86400000}));
-    app.set('views', __dirname + '/views');
-    app.set('view engine', 'jade');
+// app.use(express.favicon(__dirname + '/public/favicon.ico', {maxAge: 86400000}));
+app.set('views', __dirname + '/views');
+app.set('view engine', 'jade');
 
-    // app.use(express.bodyParser());
-    app.use(express.json());
-    app.use(express.urlencoded());
-
-    app.get('/', index);
-    app.use(express.static(__dirname + '/public'));
-});
+app.get('/', index);
+app.use(express.static(__dirname + '/public'));
 
 console.log('web server listening');
 http.createServer(app).listen(3000);

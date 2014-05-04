@@ -1,13 +1,13 @@
 {
-    "name": "turnkeyvr_Homeowner_App",
-    "description": "turnkeyvr homeowner app",
+    "name": "NodejsWebsiteTemplate",
+    "description": "Nodejs Website Template",
     "version": "0.0.1",
     "private": true,
     "scripts": {
     },
     "dependencies": {
         "express": "*",
-        "jade": "0.34.1"
+        "jade": "*"
     },
     "devDependencies": {
     }
